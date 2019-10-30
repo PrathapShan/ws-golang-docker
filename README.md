@@ -1,0 +1,1 @@
+sample for configuring DB2 connection in docker and testing same query
