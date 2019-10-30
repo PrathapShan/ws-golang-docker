@@ -1,10 +1,15 @@
-sample for configuring DB2 connection in docker and testing same query
+#Configuring DB2 in WIndows with Docker
 
-# Creating Vendor Folder, for external dependencies
-Type below command
+1.	cd $GOPATH\src\github.com\prathaponnet\db2check
 
->cd $worspace/src/github.com/prathaponnet/db2check
+2.	Create Vendor libraries
 
->go mod init
 
->go mod vendor
+	Command 1:	>go mod init
+	Command 2:	>go mod vendor
+		
+	Check a new folder vendor created under $GOPATH\src\github.com\prathaponnet\db2check
+
+3. delete the files go.mod	, go.sum before building
+
+4. docker build .
